@@ -1,0 +1,91 @@
+<<<<<<< Updated upstream
+=======
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: var(--main-text-font);
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+    text-decoration: none;
+  }
+
+ul {
+    list-style: none;
+}
+
+
+
+/* Добавил на всякий случай, вдруг понадобится  */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+
+.container {
+    max-width: 320px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    @include mq(tablet){
+        max-width: 768px;
+    }
+    @include mq(desktop){
+        max-width: 1280px;
+    }
+}
+
+
+/* Размеры шрифта для всех секционных заголовков, у героя и карточек другие само собой */
+.title {
+    color: var(--main-text-color);
+    font-family: var(--secondary-text-font);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2.7;
+
+    @include mq(desktop){
+        font-size: 36px;
+        line-height: 1.8;
+    }
+}
+
+
+.button{
+    background-color: var(--accent-text-color);
+    color: var(--button-text-color);
+    min-width: 140px;
+    min-height: 40px;
+    border-radius: 25px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: var(--hover-color);
+    }
+}
+>>>>>>> Stashed changes
