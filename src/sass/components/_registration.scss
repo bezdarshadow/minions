@@ -1,0 +1,45 @@
+.registration {
+    text-align: center;
+}
+
+
+.registration-header {
+    margin-bottom: 11px;
+    &__subtitle{      
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    }
+    &__text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    }
+}
+
+.form {
+    &__label{
+        display: block;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    &__label-registration{
+        margin-bottom: 15px;
+    }
+
+    &__input{
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid var(--accent-text-color);
+        margin-bottom: 25px;
+
+        &::placeholder{
+            color: var(--placeholder-text);
+        }
+    }
+
+    &__input-lastchild{
+        margin-bottom: 37px;
+    }
+}
