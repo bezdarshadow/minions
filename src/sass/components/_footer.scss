@@ -24,10 +24,18 @@
 .footer {
   color: var(--main-text-color);
 
+  background-image: url(../images/reviews/flour-sm.png);
+  background-size: 87px 64px;
+  background-repeat: no-repeat;
+
+  background-position: bottom 0 right 0;
+
   &-container {
     // @media screen and (max-width: 767px) {
     display: block;
-    padding: 19px 15px;
+    padding-top: 47px;
+    padding-bottom: 19px;
+
     margin-left: auto;
     margin-right: auto;
   }
