@@ -1,19 +1,20 @@
 .contacts {
-  margin-top: 77px;
+  padding-top: 15px;
+  padding-bottom: 47px;
   text-align: center;
 }
-.container {
-  max-width: 320px;
-  padding: 0 15px;
-  margin: 0 auto;
+// .container {
+//   max-width: 320px;
+//   padding: 0 15px;
+//   margin: 0 auto;
 
-  @include mq(tablet) {
-    max-width: 768px;
-  }
-  @include mq(desktop) {
-    max-width: 1280px;
-  }
-}
+//   @include mq(tablet) {
+//     max-width: 768px;
+//   }
+//   @include mq(desktop) {
+//     max-width: 1280px;
+//   }
+// }
 
 .contacts-wrapper {
   padding-top: 15px;
