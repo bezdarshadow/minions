@@ -2,6 +2,10 @@ body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
   font-family: var(--main-text-font);
+
+  @include mq(desktop){
+    background-color: var(--another-bg-color);
+  }
 }
 
 img {
