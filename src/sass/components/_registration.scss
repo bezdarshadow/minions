@@ -1,5 +1,12 @@
 .registration {
     text-align: center;
+
+    &__title{
+        display: none;
+        @include mq(tablet){
+            display: block;
+        }
+    }
 }
 
 .registration-wrapper{
@@ -9,19 +16,52 @@
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+
+    @include mq(tablet){
+        display: flex;
+        justify-content: center;
+
+        border-radius: 150px;
+        max-width: 634px;
+
+        padding: 35px 0;
+    }
+    @include mq(desktop){
+        max-width: 822px;
+    }
 }
 .registration-header {
     padding-bottom: 20px;
     margin-bottom: 11px;
     border-bottom: 1px solid rgba(158, 96, 65, 0.5);
+
+    @include mq(tablet){
+        border: 0;
+        padding: 20px 0;
+        margin: 0;
+        text-align: end;
+        border-right: 1px solid rgba(158, 96, 65, 0.5);
+        margin-right: 30px;
+        padding-right: 30px;
+        
+
+    }
+
     &__title{
         margin-bottom: 11px;
+        @include mq(tablet){
+            display: none;
+        
+        }
     }
     &__subtitle{      
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     margin-bottom: 25px;
+        @include mq(tablet){
+            margin-bottom: 37px;
+        }
     }
 
     &__datatime{
@@ -35,7 +75,31 @@
     }
 }
 
+.registration-footer {
+    @include mq(tablet){
+        padding: 20px 0;
+    }
+}
+
 .form {
+
+    @include mq(tablet){
+        display: flex;
+        align-items: center;
+    }
+
+    &__header{
+        display: flex;
+        flex-direction: column;
+        @include mq(tablet){
+            margin-right: 25px;
+            text-align: start;
+            max-width: 234px;
+        }
+        @include mq(desktop){
+            margin-right: 38px;
+        }
+    }
     &__label{
         display: block;
         font-size: 16px;
@@ -44,6 +108,9 @@
 
     &__label-registration{
         margin-bottom: 15px;
+        @include mq(desktop){
+            margin-bottom: 13px;
+        }
     }
 
     &__input{
@@ -56,9 +123,19 @@
         &::placeholder{
             color: var(--placeholder-text);
         }
-    }
+
+
+        @include mq(tablet){
+            margin-bottom: 15px;
+            
+        }
+    }   
 
     &__input-lastchild{
         margin-bottom: 37px;
+
+        @include mq(tablet){          
+             margin-bottom: 0; 
+        }
     }
 }
