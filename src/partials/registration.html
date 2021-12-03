@@ -1,4 +1,5 @@
 <section class="registration">
+    <h2 class="registration__title title" >Registration</h2>
     <div class=" registration-wrapper container">
         <div class="registration-header">
             <h2 class="registration-header__title title">Registration</h2>
@@ -12,12 +13,16 @@
         </div>
         <div class="registration-footer">
             <form class="form">
-                <label class="form__label form__label-registration" for="username">Apply your personal info
-                    for registration </label>
-                <input class="form__input form__input-username"  type="text" name="username" id="username" placeholder="Your name">
-                <input class="form__input form__input-telephone" type="tel" name="telephone-number" placeholder="Phone number">
-                <input class="form__input form__input-email form__input-lastchild" type="email" name="email" placeholder="Email">
-                <button class="form__button button" type="submit">Register</button>
+                <div class="form__header">
+                    <label class="form__label form__label-registration" for="username">Apply your personal info
+                        for registration </label>
+                    <input class="form__input form__input-username"  type="text" name="username" id="username" pattern="^[a-zA-Z]+\s[a-zA-Z]+$" placeholder="Your name">
+                    <input class="form__input form__input-telephone" type="tel" name="telephone-number" pattern="[+][380][0-9]{11}" placeholder="Phone number">
+                    <input class="form__input form__input-email form__input-lastchild" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email">
+                </div>
+                <div class="form__footer">
+                    <button class="form__button button" type="submit">Register</button>
+                </div>
             </form>
         </div>
     </div>
