@@ -1,34 +1,32 @@
 .contacts {
-  margin-top: 77px;
-  text-align: center;
-}
-.container {
-
-  max-width: 320px;
-  padding: 0 15px;
-  margin: 0 auto;
-
-  @include mq(tablet) {
-    max-width: 768px;
-  }
-  @include mq(desktop) {
-    max-width: 1280px;
-  }
-}
-.contacts-wrapper {
- 
   padding-top: 15px;
   padding-bottom: 47px;
- 
+  text-align: center;
 }
-.contacts-header {
-  font-family: var(--main-text-font);
-  padding-bottom: 20px;
+
+.contacts-wrapper {
+  padding-top: 15px;
+  padding-bottom: 47px;
+}
+.contacts__header {
+  font-family: var(--secondary-text-font);
+  // display: none;
+  padding-top: 27px;
+  padding-bottom: 35 px;
   margin-bottom: 11px;
- 
-  &__title {
-    margin-bottom: 11px;
+  
+  @include mq(tablet) {
+  display: block;
+  padding-top: 51px;
+  
   }
+
+  @include mq(desktop) {
+   display: block;
+   padding-top: 77px;
+   padding-bottom: 50 px;
+  }
+ 
 }
 
 .form-contacts {
