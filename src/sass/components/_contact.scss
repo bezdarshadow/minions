@@ -1,23 +1,38 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
 .contacts-wrapper {
+  
   background-color: var(--main-bg-color);
   padding-top: 15px;
   padding-bottom: 47px;
+<<<<<<< Updated upstream
+=======
+ 
+  
+>>>>>>> Stashed changes
 }
 .contacts-header {
-  font-family: var(--main-text-font);
+  
+  font-family: var(--secondary-text-font);
   padding-bottom: 20px;
   margin-bottom: 11px;
+<<<<<<< Updated upstream
 
   &__title {
     margin-bottom: 11px;
   }
+=======
+ 
+>>>>>>> Stashed changes
 }
 
-.form {
+.form-contacts {
+  display: flex;
+  flex-direction: column;
   &__label {
     display: block;
     font-size: 16 px;
@@ -29,8 +44,10 @@
   }
 
   &__input {
+
+
     background-color: transparent;
-    width: 100%;
+    width: 410 px;
     border: 0;
     border-bottom: 1px solid var(--accent-text-color);
     margin-bottom: 25px;
@@ -42,5 +59,23 @@
 
   &__input-lastchild {
     margin-bottom: 37px;
+  }
+  .button {
+   
+    background-color: var(--accent-text-color);
+    color: var(--button-text-color);
+  
+    font-family: var(--secondary-text-font);
+  
+    width: 158px;
+    height: 45px;
+    border: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+  
+    &:hover,
+    &:focus {
+      background-color: var(--hover-color);
+    }
   }
 }
