@@ -1,6 +1,13 @@
 .reviews {
+  position: relative;
   background-color: #ffffff;
-  background-image: url(../);
+  background-image: url(../images/reviews/bg-md.png);
+  background-repeat: no-repeat;
+
+  &-container {
+    display: flex;
+  }
+
   &__title {
     padding-top: 25.39px;
     font-family: Caveat Brush;
