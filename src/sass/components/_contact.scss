@@ -1,24 +1,35 @@
 .contacts {
+  padding-top: 15px;
+  padding-bottom: 47px;
   text-align: center;
 }
 
 .contacts-wrapper {
-  background-color: var(--main-bg-color);
   padding-top: 15px;
   padding-bottom: 47px;
- 
 }
-.contacts-header {
-  font-family: var(--main-text-font);
-  padding-bottom: 20px;
+.contacts__header {
+  font-family: var(--secondary-text-font);
+  // display: none;
+  padding-top: 27px;
+  padding-bottom: 35 px;
   margin-bottom: 11px;
- 
-  &__title {
-    margin-bottom: 11px;
+  
+  @include mq(tablet) {
+  display: block;
+  padding-top: 51px;
+  
   }
+
+  @include mq(desktop) {
+   display: block;
+   padding-top: 77px;
+   padding-bottom: 50 px;
+  }
+ 
 }
 
-.form {
+.form-contacts {
   &__label {
     display: block;
     font-size: 16px;
