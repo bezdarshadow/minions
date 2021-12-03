@@ -1,0 +1,28 @@
+.reviews {
+  position: relative;
+  background-color: #ffffff;
+  background-image: url(../images/reviews/bg-md.png);
+  background-repeat: no-repeat;
+
+  &-container {
+    display: flex;
+  }
+
+  &__title {
+    padding-top: 25.39px;
+    font-family: Caveat Brush;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 2.71;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 4.64;
+  }
+}

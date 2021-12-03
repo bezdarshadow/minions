@@ -1,0 +1,325 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+:root {
+  --main-text-color: #2e2520;
+  --accent-text-color: #ab816c;
+  --placeholder-text: rgba(171, 129, 108, 0.5);
+  --decor-color: rgba(158, 96, 65, 0.5);
+  --hover-color: #876655;
+  --button-text-color: #ffffff;
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #fef3e4;
+  --modal-bg-color: rgba(254, 243, 228, 0.9);
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --main-text-font: 'Montserrat', sans-serif;
+  --secondary-text-font: 'Caveat Brush', monospace;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: var(--main-text-font);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Добавил на всякий случай, вдруг понадобится  */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* Размеры шрифта для всех секционных заголовков, у героя и карточек другие само собой */
+.title {
+  color: var(--main-text-color);
+  font-family: var(--secondary-text-font);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2.7;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.8;
+  }
+}
+
+.button {
+  background-color: var(--accent-text-color);
+  color: var(--button-text-color);
+  font-family: var(--secondary-text-font);
+  min-width: 140px;
+  min-height: 40px;
+  border: transparent;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.button:hover, .button:focus {
+  background-color: var(--hover-color);
+}
+
+.program-title {
+  font-size: 24px;
+  line-height: 2.7;
+  text-align: center;
+  font-family: var(--secondary-text-font);
+}
+
+.program-text {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.program-item {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.program-item:last-child {
+  margin-bottom: 0;
+}
+
+.program-hidden-text {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-top: 10px;
+}
+
+.program-btn {
+  font-family: var(--secondary-text-font);
+  background-color: #fff;
+  border: 0px;
+  color: var(--accent-text-color);
+  font-size: 18px;
+  line-height: 3.6;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.event-box-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.event-box-item {
+  position: relative;
+  padding: 50px 13px 40px 13px;
+  width: 142px;
+  height: 142px;
+  background-color: #FEF3E4;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+          box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+}
+
+.event-box-item:nth-child(2n) {
+  margin-top: 57px;
+  margin-left: 5px;
+}
+
+.event-box-img {
+  background-color: rgba(187, 18, 46, 0.5);
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  bottom: 92px;
+  width: 75px;
+  height: 75px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.event-box-title {
+  font-family: var(--secondary-text-font);
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.event-box-text {
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+}
+
+.event-box-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13px;
+}
+
+.reviews {
+  position: relative;
+  background-color: #ffffff;
+  background-image: url(../images/reviews/bg-md.png);
+  background-repeat: no-repeat;
+}
+
+.reviews-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews__title {
+  padding-top: 25.39px;
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 2.71;
+  text-align: center;
+}
+
+.reviews__subtitle {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 4.64;
+}
+
+.registration {
+  text-align: center;
+}
+
+.registration-wrapper {
+  background-color: var(--main-bg-color);
+  padding-top: 15px;
+  padding-bottom: 47px;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+          box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+}
+
+.registration-header {
+  padding-bottom: 20px;
+  margin-bottom: 11px;
+  border-bottom: 1px solid rgba(158, 96, 65, 0.5);
+}
+
+.registration-header__title {
+  margin-bottom: 11px;
+}
+
+.registration-header__subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  margin-bottom: 25px;
+}
+
+.registration-header__datatime {
+  display: block;
+}
+
+.registration-header__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.form__label {
+  display: block;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.form__label-registration {
+  margin-bottom: 15px;
+}
+
+.form__input {
+  background-color: transparent;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--accent-text-color);
+  margin-bottom: 25px;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: var(--placeholder-text);
+}
+
+.form__input:-ms-input-placeholder {
+  color: var(--placeholder-text);
+}
+
+.form__input::-ms-input-placeholder {
+  color: var(--placeholder-text);
+}
+
+.form__input::placeholder {
+  color: var(--placeholder-text);
+}
+
+.form__input-lastchild {
+  margin-bottom: 37px;
+}
+/*# sourceMappingURL=main.css.map */
