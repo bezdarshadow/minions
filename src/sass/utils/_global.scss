@@ -72,8 +72,12 @@ ul {
 .button {
   background-color: var(--accent-text-color);
   color: var(--button-text-color);
+
+  font-family: var(--secondary-text-font);
+
   min-width: 140px;
   min-height: 40px;
+  border: transparent;
   border-radius: 25px;
   cursor: pointer;
 
