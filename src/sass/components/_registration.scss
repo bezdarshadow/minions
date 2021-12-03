@@ -115,10 +115,16 @@
 
     &__input{
         background-color: transparent;
+        outline: transparent;
         width: 100%;
         border: 0;
         border-bottom: 1px solid var(--accent-text-color);
         margin-bottom: 25px;
+
+
+        &:invalid{
+            border: 1px solid rgb(212, 55, 55);
+        }
 
         &::placeholder{
             color: var(--placeholder-text);
