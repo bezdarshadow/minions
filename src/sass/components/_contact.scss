@@ -3,7 +3,6 @@
   text-align: center;
 }
 .container {
-
   max-width: 320px;
   padding: 0 15px;
   margin: 0 auto;
@@ -16,16 +15,14 @@
   }
 }
 .contacts-wrapper {
- 
   padding-top: 15px;
   padding-bottom: 47px;
- 
 }
 .contacts-header {
   font-family: var(--main-text-font);
   padding-bottom: 20px;
   margin-bottom: 11px;
- 
+
   &__title {
     margin-bottom: 11px;
   }
