@@ -1,0 +1,115 @@
+// Common
+
+.container {
+  @media screen and (max-width: 767px) {
+    width: 320px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1200px;
+  }
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+// Footer
+
+.footer {
+  color: var(--main-text-color);
+
+  background-image: url(../images/reviews/flour-sm.png);
+  background-size: 87px 64px;
+  background-repeat: no-repeat;
+
+  background-position: bottom 0 right 0;
+
+  &-container {
+    // @media screen and (max-width: 767px) {
+    display: block;
+    padding-top: 47px;
+    padding-bottom: 19px;
+
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+
+  &-social {
+    // @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 51px;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 9px;
+
+      @media screen and (min-width: 768px) and (max-width: 1279px) {
+        margin-right: 9.5px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        margin-right: 12px;
+      }
+    }
+    &__link:hover,
+    &__link:focus {
+      color: var(--hover-color);
+    }
+    &__icon {
+      fill: currentColor;
+    }
+    .footer-social__icon--tw {
+      @media screen and (min-width: 1280px) {
+        width: 24px;
+        height: 19px;
+      }
+    }
+
+    .footer-social__icon--in {
+      @media screen and (min-width: 1280px) {
+        width: 19px;
+        height: 19px;
+      }
+    }
+
+    .footer-social__icon--fac {
+      @media screen and (min-width: 1280px) {
+        width: 10.27px;
+        height: 19px;
+      }
+    }
+  }
+  &-contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    &__link {
+      font-family: var(--main-text-font);
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 1.25;
+
+      color: var(--main-text-color);
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: var(--hover-color);
+    }
+    &__icon {
+      fill: currentColor;
+    }
+  }
+}
