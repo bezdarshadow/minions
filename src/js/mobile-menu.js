@@ -1,14 +1,13 @@
 (() => {
-    const refs = {
-      openModalBtn: document.querySelector('[data-mobile-menu-open]'),
-      closeModalBtn: document.querySelector('[data-mobile-menu-close]'),
-      modal: document.querySelector('[data-mobile-menu]'),
-    };
-  
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
-  
-    function toggleModal() {
-      refs.modal.classList.toggle('is-visible');
+  $('.about-us-btn').click(function () {
+    const validateText = $('.is-shown');
+    if (validateText.text() === 'Read more') {
+      $('[data-more-text]').show('slow');
+    } else {
+      $('[data-more-text]').hide('slow');
     }
-  })();
+    $('.btn-text').each(function () {
+      $(this).toggleClass('is-shown');
+    });
+  });
+})();
