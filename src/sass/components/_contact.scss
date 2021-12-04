@@ -1,44 +1,49 @@
 .contacts {
   text-align: center;
+
+  @include mq(tablet) {
+    padding-top: 51px;
+  }
+  
 }
 
 .contacts-wrapper {
-  padding-bottom: 47 px ;
-  width: 265 px;
+  
 
-  @include mq(tablet) {
-    padding-bottom: 50 px ;
-  }
-  @include mq(desktop) {
-    width: 430px;
-    padding-bottom: 82 px ;
-  }
-
+  // @include mq(tablet) {
+  //   width: 410px;
+  // }
+  // @include mq(desktop) {
+  //   width: 430px;
+    
+  // }
 }
 
 .contacts__header {
   font-family: var(--secondary-text-font);
   // display: none;
-  padding-top: 27px;
+  padding-top: 35 px;
   padding-bottom: 35 px;
   margin-bottom: 12px;
 
   @include mq(tablet) {
     display: block;
-    padding-top: 51px;
+    // padding-top: 51px;
   }
 
   @include mq(desktop) {
     display: block;
-    padding-top: 77px;
+    // padding-top: 77px;
     padding-bottom: 50 px;
   }
 }
-.button{
+
+
+.button {
   width: 145px;
   height: 40px;
 
-  @include mq(desktop){
+  @include mq(desktop) {
     width: 158px;
     height: 45px;
   }
@@ -53,15 +58,16 @@
   &__label-contacts {
     margin-bottom: 22px;
     text-align: center;
-
   }
 
   &__input {
     background-color: transparent;
-    width: 100%;
+    width: 265 px;
     border: 0;
     border-bottom: 1px solid var(--accent-text-color);
     margin-bottom: 25px;
+
+
 
     &::placeholder {
       color: var(--placeholder-text);
