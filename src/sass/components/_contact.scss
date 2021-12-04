@@ -15,10 +15,14 @@
 
 
 .form-contacts {
+  display: flex;
+  flex-direction: column;
+  // width: 100%;
   &__input-text {
+    
     margin-top: 25px;
   }
-  width: 100%;
+  
   &__label {
     display: block;
     font-size: 16px;
@@ -31,8 +35,8 @@
     text-align: center;
   }
   @include mq(desktop) {
-    padding-top: 50px;
-    padding-bottom: 50 px;
+    // padding-top: 50px;
+  
   }
 
   &__input {
@@ -53,16 +57,16 @@
     }
   }
   &__button {
-    // margin-top: 37px;
+    margin-top: 37px;
     width: 145px;
     height: 40px;
   
     @include mq(tablet) {
-      // margin-top: 27px;
+      margin-top: 27px;
     }
   
     @include mq(desktop) {
-      // margin-top: 27px;
+      margin-top: 27px;
       width: 158px;
       height: 45px;
     }
