@@ -1,19 +1,19 @@
 // Common
 
-.container {
-  @media screen and (max-width: 767px) {
-    width: 320px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 1200px;
-  }
-}
-.list {
-  list-style: none;
-}
+// .container {
+//   @media screen and (max-width: 767px) {
+//     width: 320px;
+//   }
+//   @media screen and (min-width: 768px) and (max-width: 1279px) {
+//     width: 768px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     width: 1200px;
+//   }
+// }
+// .list {
+//   list-style: none;
+// }
 .link {
   text-decoration: none;
   color: var(--main-text-color);
@@ -27,14 +27,38 @@
   background-image: url(../images/reviews/flour-sm.png);
   background-size: 87px 64px;
   background-repeat: no-repeat;
-
   background-position: bottom 0 right 0;
+  @include mq(retina) {
+    background-image: url(../images/reviews/flour@2-sm.png);
+  }
+  @include mq(tablet-only) {
+    background-image: url(../images/reviews/flour-md.png);
+    background-size: 147px 144px;
+    @include mq(retina) {
+      background-image: url(../images/reviews/flour@2-md.png);
+    }
+  }
+  @include mq(desktop) {
+    background-image: url(../images/reviews/flour-lg.png);
+    background-size: 319px 184px;
+    @include mq(retina) {
+      background-image: url(../images/reviews/flour@2-lg.png);
+    }
+  }
 
   &-container {
     // @media screen and (max-width: 767px) {
     display: block;
-    padding-top: 47px;
+
     padding-bottom: 19px;
+    padding-top: 47px;
+    @include mq(tablet) {
+      padding-top: 50px;
+      padding-bottom: 21px;
+    }
+    @include mq(desktop) {
+      padding-top: 82px;
+    }
 
     // margin-left: auto;
     // margin-right: auto;
@@ -46,18 +70,18 @@
     justify-content: center;
     margin-bottom: 35px;
 
-    @media screen and (min-width: 1280px) {
+    @include mq(desktop) {
       margin-bottom: 51px;
     }
 
     &__item:not(:last-child) {
       margin-right: 9px;
 
-      @media screen and (min-width: 768px) and (max-width: 1279px) {
+      @include mq(tablet-only) {
         margin-right: 9.5px;
       }
 
-      @media screen and (min-width: 1280px) {
+      @include mq(desktop) {
         margin-right: 12px;
       }
     }
@@ -68,22 +92,22 @@
     &__icon {
       fill: currentColor;
     }
-    .footer-social__icon--tw {
-      @media screen and (min-width: 1280px) {
+    &__icon--tw {
+      @include mq(desktop) {
         width: 24px;
         height: 19px;
       }
     }
 
-    .footer-social__icon--in {
-      @media screen and (min-width: 1280px) {
+    &__icon--in {
+      @include mq(desktop) {
         width: 19px;
         height: 19px;
       }
     }
 
-    .footer-social__icon--fac {
-      @media screen and (min-width: 1280px) {
+    &__icon--fac {
+      @include mq(desktop) {
         width: 10.27px;
         height: 19px;
       }
