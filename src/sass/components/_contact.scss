@@ -4,6 +4,7 @@
 
 .contacts-wrapper {
   padding-top: 27px;
+ 
 
   @include mq(tablet) {
     padding-top: 51px;
@@ -58,7 +59,7 @@
 
   &__input {
     background-color: transparent;
-    width: 265 px;
+    width: 100%;
     border: 0;
     border-bottom: 1px solid var(--accent-text-color);
     margin-bottom: 25px;
