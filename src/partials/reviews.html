@@ -1,16 +1,83 @@
 
-    <section class="reviews" id="reviews">
-        <div class="section reviews__container">
-          <h3 class="reviews__title">Reviews</h3>
-          <!--  -->
-            <img class="reviews-img" src="" alt="" width="116" height="146"/>
-            <!-- <img class="reviews-img" src="" alt="" width="" height=""/> -->
-          <p class="reviews__subtitle">Will</p>
-          <p class="reviews__text">Last time I have visited a cooking course by Eva 
- I was impressed with the way she explained everything
- to people. You can be sure you will manage to cook a delicious dish even if it is your first time in the kitchen!
-Thank you so much for the masterclass! Looking forward to the next one and highly recommend it to everyone!</p>
-        <p clas="2"></p>
+<section class="reviews">
+  <div class="reviews-container container">
+      <h2 class="reviews-title">Reviews</h2>
 
-    </section>
+      <!-- Reviews-box-images  -->
+      <div class="reviews-images">
+          <picture class="reviews-depiction1">
+            <source
+            media="(min-width: 1200px)"
+            srcset="./images/reviews/john-lg.png 1x, ./images/reviews/john@2-lg.png 2x">
+            <img class="image" 
+            srcset="./images/reviews/john-md.png 1x, ./images/reviews/john@2-md.png 2x"
+            src="./images/reviews/john-md.png"
+            alt="John"
+            loading="lazy">
+          </picture>
+          <picture class="reviews-depiction2">
+            <source
+            media="(min-width: 1200px)"
+            srcset="./images/reviews/will-lg.png 1x, ./images/reviews/will@2-lg.png 2x">
+            <source
+            media="(min-width: 768px)"
+            srcset="./images/reviews/will-md.png 1x, ./images/reviews/will@2-md.png 2x">
+            <img class="image"              
+            srcset="./images/reviews/will-sm.png 1x, ./images/reviews/will@2-sm.png 2x"
+            src="./images/reviews/will-sm.png"
+            alt="Wlill"
+            loading="lazy">
+          </picture>
+          <picture class="reviews-depiction3">
+            <source
+            media="(min-width: 1200px)"
+            srcset="./images/reviews/elizabeth-lg.png 1x, ./images/reviews/elizabeth@2-lg.png 2x">
+            <img class="image" 
+            srcset="./images/reviews/elizabeth-md.png 1x, ./images/reviews/elizabeth@2-md.png 2x"
+            src="./images/reviews/john-md.png"
+            alt="Elizabeth"
+            loading="lazy">
+          </picture>
+        </ul>
+      </div>
+      <div class="reviews-block">
+        <ul class="reviews-list">
+          <li class="reviews-item">
+            <svg class="star-icon" width="24" height="24">
+              <use href=./images/sprite/icons.svg#icon-star></use>
+            </svg>
+          </li> 
+          <li class="reviews-item">
+            <svg class="star-icon" width="24" height="24">
+              <use href=./images/sprite/icons.svg#icon-star></use>
+            </svg>
+          </li> 
+          <li class="reviews-item">
+            <svg class="star-icon" width="24" height="24">
+              <use href=./images/sprite/icons.svg#icon-star></use>
+            </svg>
+          </li> 
+          <li class="reviews-item">
+            <svg class="star-icon" width="24" height="24">
+              <use href=./images/sprite/icons.svg#icon-star></use>
+            </svg>
+          </li> 
+          <li class="reviews-item">
+            <svg class="star-icon" width="24" height="24">
+              <use href=./images/sprite/icons.svg#icon-star></use>
+            </svg>
+          </li> 
+        </ul>     
+        <h3 class="reviews-subtitle">Will</h3>
+          <p class="reviews-text">
+            Last time I have visited a cooking course by Eva I was impressed with the way she explained
+            everything to people. You can be sure you will manage to cook a delicious dish even if it is
+            your first time in the kitchen! Thank you so much for the masterclass! Looking forward to the
+            next one and highly recommend it to everyone!
+          </p>
+      </div>    
+  
+    </div>
+  </div>
+</section>
 
