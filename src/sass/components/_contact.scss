@@ -13,34 +13,7 @@
   }
 }
 
-.contacts__header {
-  font-family: var(--secondary-text-font);
-  // display: none;
 
-  @include mq(tablet) {
-    display: block;
-  }
-
-  @include mq(desktop) {
-    display: block;
-  }
-}
-
-.button {
-  margin-top: 37px;
-  width: 145px;
-  height: 40px;
-
-  @include mq(tablet) {
-    margin-top: 27px;
-  }
-
-  @include mq(desktop) {
-    margin-top: 27px;
-    width: 158px;
-    height: 45px;
-  }
-}
 .form-contacts {
   &__input-text {
     margin-top: 25px;
@@ -67,9 +40,31 @@
     width: 265px;
     border: 0;
     border-bottom: 1px solid var(--accent-text-color);
+    @include mq(tablet) {
+      width: 410px;
+    }
+
+    @include mq(desktop) {
+      width: 430px;
+    }
 
     &::placeholder {
       color: var(--placeholder-text);
+    }
+  }
+  &__button {
+    // margin-top: 37px;
+    width: 145px;
+    height: 40px;
+  
+    @include mq(tablet) {
+      // margin-top: 27px;
+    }
+  
+    @include mq(desktop) {
+      // margin-top: 27px;
+      width: 158px;
+      height: 45px;
     }
   }
 }
