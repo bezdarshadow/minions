@@ -1,19 +1,5 @@
 // Common
 
-// .container {
-//   @media screen and (max-width: 767px) {
-//     width: 320px;
-//   }
-//   @media screen and (min-width: 768px) and (max-width: 1279px) {
-//     width: 768px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     width: 1200px;
-//   }
-// }
-// .list {
-//   list-style: none;
-// }
 .link {
   text-decoration: none;
   color: var(--main-text-color);
@@ -47,7 +33,6 @@
   }
 
   &-container {
-    // @media screen and (max-width: 767px) {
     display: block;
 
     padding-bottom: 19px;
@@ -59,13 +44,9 @@
     @include mq(desktop) {
       padding-top: 82px;
     }
-
-    // margin-left: auto;
-    // margin-right: auto;
   }
 
   &-social {
-    // @media screen and (max-width: 767px) {
     display: flex;
     justify-content: center;
     margin-bottom: 34px;
@@ -79,10 +60,6 @@
 
     &__item:not(:last-child) {
       margin-right: 9.5px;
-
-      // @include mq(tablet-only) {
-      //   margin-right: 9.5px;
-      // }
 
       @include mq(desktop) {
         margin-right: 12px;
