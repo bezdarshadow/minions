@@ -11,9 +11,9 @@
 //     width: 1200px;
 //   }
 // }
-.list {
-  list-style: none;
-}
+// .list {
+//   list-style: none;
+// }
 .link {
   text-decoration: none;
   color: var(--main-text-color);
@@ -31,12 +31,34 @@
   @include mq(retina) {
     background-image: url(../images/reviews/flour@2-sm.png);
   }
+  @include mq(tablet-only) {
+    background-image: url(../images/reviews/flour-md.png);
+    background-size: 147px 144px;
+    @include mq(retina) {
+      background-image: url(../images/reviews/flour@2-md.png);
+    }
+  }
+  @include mq(desktop) {
+    background-image: url(../images/reviews/flour-lg.png);
+    background-size: 319px 184px;
+    @include mq(retina) {
+      background-image: url(../images/reviews/flour@2-lg.png);
+    }
+  }
 
   &-container {
     // @media screen and (max-width: 767px) {
     display: block;
-    // padding-top: 47px;
+
     padding-bottom: 19px;
+    padding-top: 47px;
+    @include mq(tablet) {
+      padding-top: 50px;
+      padding-bottom: 21px;
+    }
+    @include mq(desktop) {
+      padding-top: 82px;
+    }
 
     // margin-left: auto;
     // margin-right: auto;
@@ -48,7 +70,7 @@
     justify-content: center;
     margin-bottom: 35px;
 
-    @media screen and (min-width: 1280px) {
+    @include mq(desktop) {
       margin-bottom: 51px;
     }
 
