@@ -1,6 +1,36 @@
 .registration {
     text-align: center;
 
+    .container{
+        @include mq(tablet){
+            background-image: url(../images/reviews/donut-md.png), 
+            url(../images/reviews/confetti-md.png);
+            background-repeat: no-repeat;
+            background-size: 250px;
+            background-position: top left, right -15px top 65px;
+    
+            @include mq(retina){
+                background-image: url(../images/reviews/donut@2-md.png),
+                url(../images/reviews/confetti@2-md.png);
+            }
+        }
+    
+    
+        @include mq(desktop){
+            background-image: url(../images/reviews/donut-lg.png);
+            background-size: 250px;
+            background-position: top left 40px;
+    
+            @include mq(retina){
+                background-image: url(../images/reviews/donut@2-lg.png),
+            }
+        }
+
+    }
+
+
+
+
     &__title{
         display: none;
         @include mq(tablet){
@@ -11,6 +41,7 @@
 
 .registration-wrapper{
     background-color: var(--main-bg-color);
+    margin: 0 auto;
     padding-top: 15px;
     padding-bottom: 47px;
     border-top-left-radius: 150px;
@@ -26,9 +57,12 @@
 
         padding: 35px 0;
     }
+
+
     @include mq(desktop){
         max-width: 822px;
     }
+
 }
 .registration-header {
     padding-bottom: 20px;
