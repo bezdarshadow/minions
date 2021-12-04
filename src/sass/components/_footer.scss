@@ -1,16 +1,16 @@
 // Common
 
-.container {
-  @media screen and (max-width: 767px) {
-    width: 320px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 1200px;
-  }
-}
+// .container {
+//   @media screen and (max-width: 767px) {
+//     width: 320px;
+//   }
+//   @media screen and (min-width: 768px) and (max-width: 1279px) {
+//     width: 768px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     width: 1200px;
+//   }
+// }
 .list {
   list-style: none;
 }
@@ -27,13 +27,15 @@
   background-image: url(../images/reviews/flour-sm.png);
   background-size: 87px 64px;
   background-repeat: no-repeat;
-
   background-position: bottom 0 right 0;
+  @include mq(retina) {
+    background-image: url(../images/reviews/flour@2-sm.png);
+  }
 
   &-container {
     // @media screen and (max-width: 767px) {
     display: block;
-    padding-top: 47px;
+    // padding-top: 47px;
     padding-bottom: 19px;
 
     // margin-left: auto;
@@ -53,11 +55,11 @@
     &__item:not(:last-child) {
       margin-right: 9px;
 
-      @media screen and (min-width: 768px) and (max-width: 1279px) {
+      @include mq(tablet-only) {
         margin-right: 9.5px;
       }
 
-      @media screen and (min-width: 1280px) {
+      @include mq(desktop) {
         margin-right: 12px;
       }
     }
@@ -68,22 +70,22 @@
     &__icon {
       fill: currentColor;
     }
-    .footer-social__icon--tw {
-      @media screen and (min-width: 1280px) {
+    &__icon--tw {
+      @include mq(desktop) {
         width: 24px;
         height: 19px;
       }
     }
 
-    .footer-social__icon--in {
-      @media screen and (min-width: 1280px) {
+    &__icon--in {
+      @include mq(desktop) {
         width: 19px;
         height: 19px;
       }
     }
 
-    .footer-social__icon--fac {
-      @media screen and (min-width: 1280px) {
+    &__icon--fac {
+      @include mq(desktop) {
         width: 10.27px;
         height: 19px;
       }
