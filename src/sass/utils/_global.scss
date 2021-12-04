@@ -84,6 +84,7 @@ ul {
   border: transparent;
   border-radius: 25px;
   cursor: pointer;
+  transition: background-color 250ms var(--animation);
 
   &:hover,
   &:focus {
