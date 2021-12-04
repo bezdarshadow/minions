@@ -64,14 +64,12 @@
 
   &__input {
     background-color: transparent;
-    width: 100%;
+    width: 265px;
     border: 0;
     border-bottom: 1px solid var(--accent-text-color);
-   
 
     &::placeholder {
       color: var(--placeholder-text);
     }
   }
-
 }
