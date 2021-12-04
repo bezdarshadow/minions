@@ -3,47 +3,26 @@
 }
 
 .contacts-wrapper {
-  padding-bottom: 47 px ;
-  width: 265 px;
-
-  @include mq(tablet) {
-    padding-bottom: 50 px ;
-  }
-  @include mq(desktop) {
-    width: 430px;
-    padding-bottom: 82 px ;
-  }
-
-}
-
-.contacts__header {
-  font-family: var(--secondary-text-font);
-  // display: none;
   padding-top: 27px;
-  padding-bottom: 35 px;
-  margin-bottom: 12px;
 
   @include mq(tablet) {
-    display: block;
     padding-top: 51px;
   }
-
   @include mq(desktop) {
-    display: block;
     padding-top: 77px;
-    padding-bottom: 50 px;
   }
 }
-.button{
-  width: 145px;
-  height: 40px;
 
-  @include mq(desktop){
-    width: 158px;
-    height: 45px;
-  }
-}
+
 .form-contacts {
+  // display: flex;
+  // flex-direction: column;
+  // width: 100%;
+  &__input-text {
+    
+    margin-top: 25px;
+  }
+  
   &__label {
     display: block;
     font-size: 16px;
@@ -51,24 +30,46 @@
   }
 
   &__label-contacts {
-    margin-bottom: 22px;
+    padding-bottom: 35px;
+    // padding-top: 35px;
     text-align: center;
-
+  }
+  @include mq(desktop) {
+    // padding-top: 50px;
+  
   }
 
   &__input {
     background-color: transparent;
-    width: 100%;
+    width: 265px;
     border: 0;
     border-bottom: 1px solid var(--accent-text-color);
-    margin-bottom: 25px;
+    @include mq(tablet) {
+      width: 410px;
+    }
+
+    @include mq(desktop) {
+      width: 430px;
+      
+    }
 
     &::placeholder {
       color: var(--placeholder-text);
     }
   }
-
-  &__input-lastchild {
-    margin-bottom: 37px;
+  &__button {
+    margin-top: 37px;
+    width: 145px;
+    height: 40px;
+  
+    @include mq(tablet) {
+      margin-top: 27px;
+    }
+  
+    @include mq(desktop) {
+      margin-top: 27px;
+      width: 158px;
+      height: 45px;
+    }
   }
 }
