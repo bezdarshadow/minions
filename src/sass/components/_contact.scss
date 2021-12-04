@@ -1,43 +1,33 @@
 .contacts {
   text-align: center;
+}
+
+.contacts-wrapper {
+  padding-top: 27px;
 
   @include mq(tablet) {
     padding-top: 51px;
   }
-  
-}
-
-.contacts-wrapper {
-  
-
-  // @include mq(tablet) {
-  //   width: 410px;
-  // }
-  // @include mq(desktop) {
-  //   width: 430px;
-    
-  // }
+  @include mq(desktop) {
+    padding-top: 77px;
+  }
 }
 
 .contacts__header {
   font-family: var(--secondary-text-font);
   // display: none;
-  padding-top: 35 px;
-  padding-bottom: 35 px;
-  margin-bottom: 12px;
+
 
   @include mq(tablet) {
     display: block;
-    // padding-top: 51px;
+   
   }
 
   @include mq(desktop) {
     display: block;
-    // padding-top: 77px;
-    padding-bottom: 50 px;
+   
   }
 }
-
 
 .button {
   width: 145px;
@@ -49,6 +39,7 @@
   }
 }
 .form-contacts {
+  width: 100%;
   &__label {
     display: block;
     font-size: 16px;
@@ -56,8 +47,13 @@
   }
 
   &__label-contacts {
-    margin-bottom: 22px;
+    padding-bottom: 35px;
+    padding-top: 35px;
     text-align: center;
+  }
+  @include mq(desktop) {
+    padding-top: 50px;
+    padding-bottom: 50 px;
   }
 
   &__input {
@@ -66,8 +62,6 @@
     border: 0;
     border-bottom: 1px solid var(--accent-text-color);
     margin-bottom: 25px;
-
-
 
     &::placeholder {
       color: var(--placeholder-text);
