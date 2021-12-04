@@ -13,16 +13,15 @@
   }
 }
 
-
 .form-contacts {
-  // display: flex;
-  // flex-direction: column;
-  // width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &__input-text {
-    
     margin-top: 25px;
   }
-  
+
   &__label {
     display: block;
     font-size: 16px;
@@ -36,7 +35,6 @@
   }
   @include mq(desktop) {
     // padding-top: 50px;
-  
   }
 
   &__input {
@@ -50,7 +48,6 @@
 
     @include mq(desktop) {
       width: 430px;
-      
     }
 
     &::placeholder {
@@ -61,11 +58,11 @@
     margin-top: 37px;
     width: 145px;
     height: 40px;
-  
+
     @include mq(tablet) {
       margin-top: 27px;
     }
-  
+
     @include mq(desktop) {
       margin-top: 27px;
       width: 158px;
