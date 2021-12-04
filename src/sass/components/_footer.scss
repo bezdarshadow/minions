@@ -75,11 +75,11 @@
     }
 
     &__item:not(:last-child) {
-      margin-right: 9px;
+      margin-right: 9.5px;
 
-      @include mq(tablet-only) {
-        margin-right: 9.5px;
-      }
+      // @include mq(tablet-only) {
+      //   margin-right: 9.5px;
+      // }
 
       @include mq(desktop) {
         margin-right: 12px;
