@@ -1,2 +1,3 @@
 import './sass/main.scss';
-import './js/program-btn';
+import './js/about-us';
+import './js/modal';

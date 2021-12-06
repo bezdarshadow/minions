@@ -62,18 +62,6 @@
   }
 }
 
-// кнопки отрытия и закрытия мобильного меню
-
-// .about-us-btn .bnt-close {
-//   display: none;
-// }
-// .about-us-btn.is-visible .bnt-close {
-//   display: block;
-// }
-// .about-us-btn.is-visible .bnt-open {
-//   display: none;
-// }
-
 .about-us-bloks {
   @include mq(tablet) {
     display: block;

@@ -19,7 +19,7 @@
         @include mq(desktop){
             background-image: url(../images/reviews/donut-lg.png);
             background-size: 250px;
-            background-position: top left 40px;
+            background-position: top left 65px;
     
             @include mq(retina){
                 background-image: url(../images/reviews/donut@2-lg.png),
@@ -39,11 +39,16 @@
     }
 }
 
+
+
+
 .registration-wrapper{
     background-color: var(--main-bg-color);
     margin: 0 auto;
     padding-top: 15px;
     padding-bottom: 47px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
@@ -77,6 +82,7 @@
         border-right: 1px solid rgba(158, 96, 65, 0.5);
         margin-right: 30px;
         padding-right: 30px;
+        padding-left: 30px;
         
 
     }
@@ -152,30 +158,57 @@
         outline: transparent;
         width: 100%;
         border: 1px solid transparent;
+        border-radius: 3px;
         border-bottom: 1px solid var(--accent-text-color);
-        margin-bottom: 25px;
+     
 
 
         &:invalid{
-            border: 1px solid rgb(212, 55, 55);
+            border: 1px solid var(--form-helper-color);
         }
+
 
         &::placeholder{
             color: var(--placeholder-text);
         }
 
 
-        @include mq(tablet){
-            margin-bottom: 15px;
-            
-        }
     }   
 
-    &__input-lastchild{
+    &__input-wrapper-lastchild{
         margin-bottom: 37px;
 
         @include mq(tablet){          
              margin-bottom: 0; 
+        }
+    }
+
+    &__input-wrapper{
+        position: relative;
+        margin-bottom: 25px;
+
+        @include mq(tablet){
+            margin-bottom: 17px;
+            
+        }
+
+        &:focus-within .form__input-helper{
+            opacity: 1;
+        }
+    }
+
+    
+
+    &__input-helper{
+        position: absolute;
+        left: 0;
+        top: 110%;
+        opacity: 0;
+        color: var(--form-helper-color);
+        font-size: 12px;
+        transition: opacity 250ms var(--animation);
+        @include mq(tablet){
+            top: 100%;
         }
     }
 }

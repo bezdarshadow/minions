@@ -3,7 +3,34 @@ body {
   color: var(--main-text-color);
   font-family: var(--main-text-font);
 
-  @include mq(desktop){
+  background-image: url(../images/hero/bg-img-sm.png), url(../images/reviews/bg-sm.png);
+  background-repeat: no-repeat;
+  background-size: contain, contain;
+  background-position: top left, top 1885px left;
+  @include mq(retina) {
+    background-image: url(../images/hero/bg-img@2-sm.png), url(../images/reviews/bg@2-sm.png);
+  }
+
+  @include mq(tablet) {
+    background-image: url(../images/hero/bg-img-md.png), url(../images/reviews/bg-md.png);
+    background-position: top left, top 1140px left;
+    @include mq(retina) {
+      background-image: url(../images/hero/bg-img@2-md.png), url(../images/reviews/bg@2-md.png);
+    }
+  }
+  @include mq(desktop) {
+    background-image: url(../images/reviews/confetti-lg.png), url(../images/hero/bg-img-lg.png),
+      url(../images/reviews/bg-lg.png);
+    background-size: 589px 606px, contain, contain;
+    background-repeat: no-repeat;
+    background-position: top 2200px right 50px, top left, top 1675px left;
+    @include mq(retina) {
+      background-image: url(../images/reviews/confetti@2-lg.png),
+        url(../images/hero/bg-img@2-lg.png), url(../images/reviews/bg@2-lg.png);
+    }
+  }
+
+  @include mq(desktop) {
     background-color: var(--another-bg-color);
   }
 }
@@ -28,6 +55,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--main-text-color);
 }
 
 ul {
@@ -84,6 +112,7 @@ ul {
   border: transparent;
   border-radius: 25px;
   cursor: pointer;
+  transition: background-color 250ms var(--animation);
 
   &:hover,
   &:focus {
