@@ -1,68 +1,74 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 33px;
 
-    @include mq(desktop) {
-        justify-content: normal;
-    }
+  @include mq(mobile-only) {
+    max-width: 480px;
+  }
+  @include mq(tablet) {
+    padding: 0 68px;
+    margin-bottom: 10px;
+  }
+  @include mq(desktop) {
+    padding: 0 230px;
+    justify-content: normal;
+    margin-bottom: 57px;
+  }
 }
 
-
 .header-logo-link {
-    margin-left: 50%;
-    transform: translate(-50%, 0);
-    margin-right: auto;
-    margin-top: 7px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  margin-right: auto;
+  margin-top: 7px;
 
-    @include mq(tablet) {
-    margin-left: 68px;
+  @include mq(tablet) {
+    margin-left: 0;
     margin-top: 27px;
     transform: translate(0, 0);
-    }
-    @include mq(desktop) {
-        margin-top: 32px;
-        margin-left: 230px;
-        margin-right: 38px;
-    }
+  }
+  @include mq(desktop) {
+    margin-top: 32px;
+    margin-right: 38px;
+  }
 }
 
 .header-logo-svg {
-    width: 96px;
-    height: 43px;
-    fill: var(--main-text-color);
-    @include mq(desktop) {
-        width: 158px;
-        height: 71px;
-    }
+  width: 96px;
+  height: 43px;
+  fill: var(--main-text-color);
+  @include mq(desktop) {
+    width: 158px;
+    height: 71px;
+  }
 }
 
 .header-links-list {
-    display: none;
+  display: none;
 
-    @include mq(desktop) {
-        display: flex;
-    }
+  @include mq(desktop) {
+    display: flex;
+  }
 }
 
 .header-links-item {
-    margin-right: 20px;
-    font-size: 18px;
-    line-height: 1.22;
-    &:last-child {
-        margin-right: 0;
-    }
+  margin-right: 20px;
+  font-size: 18px;
+  line-height: 1.22;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .menu-button {
-z-index: 4;
-margin-right: 15px;
-
-@include mq(tablet) {
+  z-index: 4;
+  @include mq(tablet) {
     margin-top: 15px;
-}
-@include mq(desktop) {
+  }
+  @include mq(desktop) {
     display: none;
-}
+  }
 }
