@@ -33,15 +33,18 @@
 
 .reviews-title {
   @include mq(modile) {
+    padding-top: 25.39px;
     margin-bottom: 0;
   }
   @include mq(tablet) {
     margin-bottom: 10px;
+    padding-top: 31.39px;
   }
   @include mq(desktop) {
-    margin-bottom: 24px;
     font-size: 36px;
     line-height: 0.7;
+    margin-bottom: 24px;
+    padding-top: 68px;
   }
 }
 
