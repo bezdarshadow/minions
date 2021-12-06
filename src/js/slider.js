@@ -37,6 +37,6 @@ $('.slider__text').slick({
   slidesToShow: 1,
   asNavFor: '.slider',
   dots: false,
-  // asNavFor: '.slider',
   fade: true,
 });
+
