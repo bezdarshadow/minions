@@ -1,0 +1,104 @@
+.hero-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  @include mq(tablet) {
+    align-items: flex-start;
+    padding-left: 68px;
+  }
+  @include mq(desktop) {
+    padding-left: 230px;
+  }
+}
+
+.spoon-hero {
+  display: none;
+  position: absolute;
+  z-index: -1;
+  width: 178px;
+  @include mq(desktop) {
+    display: block;
+  }
+}
+
+.hero-main-title {
+  font-family: var(--secondary-text-font);
+  font-size: 30px;
+  line-height: 1.26;
+  text-align: center;
+  width: max-content;
+  z-index: 2;
+  margin-bottom: 3px;
+  font-weight: normal;
+
+  @include mq(desktop) {
+    font-size: 64px;
+    line-height: 1.01;
+    margin-bottom: 15px;
+  }
+}
+
+.hero-secondary-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  width: max-content;
+  margin-bottom: 37px;
+
+  @include mq(tablet) {
+    margin-bottom: 26px;
+  }
+
+  @include mq(desktop) {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+}
+
+.reg-btn-hero {
+  width: 145px;
+  height: 40px;
+  font-family: var(--secondary-text-font);
+  background-color: var(--accent-text-color);
+  border-radius: 25px;
+  border: 0;
+  font-size: 18px;
+  color: var(--white-color);
+  margin-bottom: 45px;
+  cursor: pointer;
+}
+
+.hero-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 61px;
+
+  @include mq(desktop) {
+    width: 77px;
+  }
+}
+
+.hero-twitter {
+    @include mq(desktop) {
+  width: 24px;
+  height: 19px;
+    }
+}
+
+.hero-instgram {
+    @include mq(desktop) {
+  width: 19px;
+  height: 19px;
+    }
+}
+
+.hero-facebook {
+    @include mq(desktop) {
+  width: 10px;
+  height: 19px;
+    }
+}
