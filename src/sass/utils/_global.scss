@@ -7,7 +7,7 @@ body {
     url(../images/reviews/bg-sm.png);
   background-repeat: no-repeat;
   background-size: 87px 64px, contain, contain;
-  background-position: bottom right, top left, top 1885px left;
+  background-position: bottom right, top left, top 1990px left;
   @include mq(retina) {
     background-image: url(../images/reviews/flour@2-sm.png), url(../images/hero/bg-img@2-sm.png),
       url(../images/reviews/bg@2-sm.png);
@@ -28,7 +28,7 @@ body {
       url(../images/hero/bg-img-lg.png), url(../images/reviews/bg-lg.png);
     background-size: 319px 184px, 589px 606px, contain, contain;
     background-repeat: no-repeat;
-    background-position: bottom right, top 1850px right, top left, top 1675px left;
+    background-position: bottom right, top 2300px right, top left, top 1575px left;
     @include mq(retina) {
       background-image: url(../images/reviews/flour@2-lg.png),
         url(../images/reviews/confetti@2-lg.png), url(../images/hero/bg-img@2-lg.png),
