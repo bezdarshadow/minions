@@ -14,6 +14,12 @@
 
   &-container {
     display: block;
+    @include mq(tablet) {
+      padding: 0 67px;
+    }
+    @include mq(desktop) {
+      padding: 0 230px;
+    }
   }
 
   // <!-- footer-social -->
