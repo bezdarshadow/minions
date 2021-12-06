@@ -42,7 +42,7 @@
 }
 .about-us-btn {
   font-family: var(--secondary-text-font);
-  background-color: #fff;
+  background-color: transparent;
   border: 0px;
   color: var(--accent-text-color);
   font-size: 18px;
@@ -61,18 +61,6 @@
     }
   }
 }
-
-// кнопки отрытия и закрытия мобильного меню
-
-// .about-us-btn .bnt-close {
-//   display: none;
-// }
-// .about-us-btn.is-visible .bnt-close {
-//   display: block;
-// }
-// .about-us-btn.is-visible .bnt-open {
-//   display: none;
-// }
 
 .about-us-bloks {
   @include mq(tablet) {
