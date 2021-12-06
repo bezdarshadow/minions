@@ -19,7 +19,7 @@
         @include mq(desktop){
             background-image: url(../images/reviews/donut-lg.png);
             background-size: 250px;
-            background-position: top left 40px;
+            background-position: top left 65px;
     
             @include mq(retina){
                 background-image: url(../images/reviews/donut@2-lg.png),
@@ -38,6 +38,9 @@
         }
     }
 }
+
+
+
 
 .registration-wrapper{
     background-color: var(--main-bg-color);
