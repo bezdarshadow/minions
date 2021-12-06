@@ -1,15 +1,14 @@
 .contacts {
   text-align: center;
-}
-
-.contacts-wrapper {
   padding-top: 27px;
+  padding-bottom: 25px;
 
   @include mq(tablet) {
     padding-top: 51px;
   }
   @include mq(desktop) {
     padding-top: 77px;
+    padding-bottom: 40px;
   }
 }
 
@@ -39,9 +38,12 @@
 
   &__input {
     background-color: transparent;
+    outline: transparent;
     width: 265px;
-    border: 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
     border-bottom: 1px solid var(--accent-text-color);
+
     @include mq(tablet) {
       width: 410px;
     }
@@ -53,7 +55,37 @@
     &::placeholder {
       color: var(--placeholder-text);
     }
+    &:invalid {
+      border: 1px solid var(--form-helper-color);
+    }
   }
+  // Input wrapper
+  &__input-wrapper {
+    position: relative;
+    // margin-bottom: 25px;
+
+    &:focus-within .form-contacts__input-helper {
+      opacity: 1;
+    }
+
+    @include mq(tablet) {
+      margin-bottom: 17px;
+    }
+  }
+  &__input-helper {
+    position: absolute;
+    left: 0;
+
+    opacity: 0;
+    color: var(--form-helper-color);
+    font-size: 12px;
+    transition: opacity 250ms var(--animation);
+
+    @include mq(tablet) {
+      top: 100%;
+    }
+  }
+  // Button input
   &__button {
     margin-top: 37px;
     width: 145px;
