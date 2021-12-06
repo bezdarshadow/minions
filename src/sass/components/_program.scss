@@ -4,10 +4,10 @@
 
 .program-container {
 
-    @include mq(tablet) {
+    @include mq(tablet-only) {
         display: flex;
-        margin-right: 50px;
-        margin-left: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     @include mq(desktop) {
