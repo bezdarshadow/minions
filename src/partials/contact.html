@@ -8,7 +8,11 @@
       <label class="form-contacts__label form-contacts__label-contacts" for="question">We will answer any question!
       </label>
 
-      <input class="form-contacts__input form-contacts__input-email" type="email" name="email" placeholder="Email">
+      <div class="form-contacts__input-wrapper">
+        <input class="form-contacts__input form-contacts__input-email" type="email" name="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email">
+        <span class="form-contacts__input-helper"> * mymail@gmail.com</span>
+      </div>
 
       <input class="form-contacts__input form-contacts__input-text  type=" text" name="text"
         placeholder="Type your question" />
