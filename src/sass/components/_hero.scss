@@ -70,6 +70,11 @@
   color: var(--white-color);
   margin-bottom: 45px;
   cursor: pointer;
+  transition: background-color 250ms var(--animation);
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
 }
 
 .hero-icons {
@@ -83,22 +88,31 @@
 }
 
 .hero-twitter {
-    @include mq(desktop) {
-  width: 24px;
-  height: 19px;
-    }
+  @include mq(desktop) {
+    width: 24px;
+    height: 19px;
+  }
 }
 
 .hero-instgram {
-    @include mq(desktop) {
-  width: 19px;
-  height: 19px;
-    }
+  @include mq(desktop) {
+    width: 19px;
+    height: 19px;
+  }
 }
 
 .hero-facebook {
-    @include mq(desktop) {
-  width: 10px;
-  height: 19px;
-    }
+  @include mq(desktop) {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+.hero-twitter,
+.hero-instgram,
+.hero-facebook {
+  transition: fill 250ms var(--animation);
+  &:hover {
+    fill: var(--hover-color);
+  }
 }
