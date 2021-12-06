@@ -93,8 +93,16 @@
   margin-right: 20px;
   font-size: 18px;
   line-height: 1.22;
+
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.header-link {
+  transition: color 250ms var(--animation);
+  &:hover {
+    color: var(--hover-color);
   }
 }
 
