@@ -1,8 +1,8 @@
-(() => {
-  $('.hamburger').on('click', showMenu);
+// (() => {
+//   $('.hamburger').on('click', showMenu);
 
-  function showMenu() {
-    $('.hamburger').toggleClass('is-active');
-    // $('[data-menu]').toggle('is-open');
-  }
-})();
+//   function showMenu() {
+//     $('.hamburger').toggleClass('is-active');
+//     // $('[data-menu]').toggle('is-open');
+//   }
+// })();
