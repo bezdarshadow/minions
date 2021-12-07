@@ -44,12 +44,18 @@
 
 
 .program-item {
+    display: flex;
     font-size: 16px;
     line-height: 1.3;
     margin-bottom: 10px;
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    &::before{
+        content: '\003E ';
+        margin-right: 4px;
     }
 
     @include mq(desktop) {

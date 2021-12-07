@@ -55,7 +55,7 @@
     &::placeholder {
       color: var(--placeholder-text);
     }
-    &:invalid {
+    &:focus:invalid {
       border: 1px solid var(--form-helper-color);
     }
   }
