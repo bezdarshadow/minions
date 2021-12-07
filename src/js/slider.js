@@ -26,7 +26,6 @@ $(document).ready(function () {
         variableWidth: false,
         slidesToShow: 1,
         centerMode: true,
-        arrows: true 
        }
     }]
   });
