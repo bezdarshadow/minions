@@ -1,4 +1,15 @@
 .header {
+  @include mq(mobile-only){
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  @include mq(tablet){
+    padding-top: 27px;
+  }
+  @include mq(desktop){
+    padding-top: 31px;
+  }
+  
   .container {
     display: flex;
     justify-content: flex-end;
@@ -17,15 +28,11 @@
 
   @include mq(mobile-only){
     margin-right: 67px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+
   }
-  @include mq(tablet){
-    padding-top: 27px;
-  }
+
   @include mq(desktop){
     margin-right: 38px;
-    padding-top: 31px;
   }
 }
 
