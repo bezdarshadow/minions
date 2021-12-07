@@ -253,8 +253,9 @@
   opacity: 0.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(../images/reviews/icon-left-arrow.png);
-  filter: invert(1);
+  background-image: url(../images/reviews/forwardarrow-left.png);
+  background-color: transparent;
+  // filter: invert(1);
   opacity: 0.5;
 }
 
@@ -264,8 +265,8 @@
   opacity: 0.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(../images/reviews/icon-right-arrow.png);
+  background-image: url(../images/reviews/forwardarrow-right.png);
   background-color: transparent;
-  filter: invert(1);
+  // filter: invert(1);
   opacity: 0.5;
 }
