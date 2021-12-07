@@ -10,7 +10,7 @@ $(document).ready(function () {
   $('.slider').slick({
     autoplay: false,
     centerMode: true,
-    // arrows: false,
+    arrows: false,
     centerPadding: '0',
     slidesToShow: 1,
     variableWidth: true,
@@ -25,7 +25,8 @@ $(document).ready(function () {
       settings: {
         variableWidth: false,
         slidesToShow: 1,
-        centerMode: true
+        centerMode: true,
+        arrows: true
       }
     }]
   });
