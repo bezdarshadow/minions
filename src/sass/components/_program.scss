@@ -199,8 +199,12 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 13px;
+    width: 21px;
+    height: 20px;
 
     @include mq(desktop) {
         margin-top: 17px;
+        width: 26px;
+        height: 26px;
     }
 }

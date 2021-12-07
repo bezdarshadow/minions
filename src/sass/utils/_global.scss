@@ -114,6 +114,8 @@ ul {
 
   font-family: var(--secondary-text-font);
 
+  font-size: 18px;
+  line-height: 1.5;
   min-width: 140px;
   min-height: 40px;
   border: transparent;
@@ -124,5 +126,10 @@ ul {
   &:hover,
   &:focus {
     background-color: var(--hover-color);
+  }
+
+  @include mq(desktop) {
+    font-size: 24px;
+    line-height: 1.5;  
   }
 }
