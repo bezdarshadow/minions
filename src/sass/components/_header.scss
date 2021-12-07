@@ -51,6 +51,7 @@
 
   @include mq(desktop) {
     display: block;
+    z-index: -1;
   }
 }
 
