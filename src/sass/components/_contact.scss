@@ -24,7 +24,11 @@
   &__label {
     display: block;
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.25;
+    @include mq(desktop){
+      font-size: 18px;
+    }
   }
 
   &__label-contacts {
