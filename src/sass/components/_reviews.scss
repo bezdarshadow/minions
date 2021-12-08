@@ -54,11 +54,11 @@
 }
 
 .slider__items {
-  text-align: center;
   opacity: 0.9;
-  width: 230px;
-  transform: scale(0.7);
-  transition: transform 300ms;
+  text-align: center;
+  width: 234px;
+  transform: scale(0.9);
+  transition: all 250ms;
   @media screen and(max-width:767.98px) {
     opacity: 1;
   }
@@ -72,6 +72,29 @@
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+
+  & .reviews {
+    display: none;
+  }
+  & img {
+    width: 110px;
+    height: 110px;
+    @media screen and (min-width: 1279.98px) {
+      width: 136px;
+      height: 136px;
+    }
+
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .reviews__picture {
@@ -102,10 +125,38 @@
   }
 }
 
+.slick-center {
+  transition: all 250ms;
+  margin-top: 20px;
+
+  opacity: 1;
+  & img {
+    @media screen and (min-width: 1279.98px) {
+      width: 234px;
+      height: 234px;
+    }
+    @media screen and (min-width: 767.98px) and (max-width: 1279.98px) {
+      width: 186px;
+      height: 186px;
+    }
+
+    transition: all 250ms;
+  }
+}
+
 .slick-slide {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.slider .slick-list {
+  @media screen and (min-width: 1279.98px) {
+    height: 326px;
+  }
+  @media screen and (min-width: 767.98px) and (max-width: 1279.98px) {
+    height: 280px;
+  }
 }
 
 .container-reviews__img {
@@ -249,6 +300,7 @@
 
 .slick-prev:before {
   font-size: 20px;
+  width: 35px;
   line-height: 1;
   opacity: 0.75;
   -webkit-font-smoothing: antialiased;
@@ -261,8 +313,10 @@
 
 .slick-next:before {
   font-size: 20px;
+  width: 35px;
   line-height: 1;
   opacity: 0.75;
+  vertical-align: middle;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url(../images/reviews/forwardarrow-right.png);
